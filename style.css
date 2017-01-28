@@ -90,8 +90,29 @@ section{
     margin-right: 10px;
     margin-top: 5px;
 }
+.flex-end{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    align-content: stretch;
+    /*flex-direction: column;*/
+}
+.little_button{
+    width: 30px;
+    height: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.green{
+    background: #b5d630;
+}
+.red{
+    background: #be003e;
+}
 
 /*----- LAST ROW -----*/
+
 .button_green{
     background-color: #097241;
     height: 45px;
