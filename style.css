@@ -83,10 +83,10 @@ section{
     margin: 0;
     float: right;
     right: 0;
-    background: #fb0506;
+    background: /*#fb0506*/#8c3434;
     border-radius: 0 0 3px 0;
 }
-/*----- SCREEN LEFT -----*/
+/*----- SCREEN MIDDLE-LEFT -----*/
 
 .container_left{
     width: 240px;
@@ -107,8 +107,8 @@ section{
     width: initial;
 }
 .container_screen_left{
-    width: 200px;
-    height: 202px;
+    width: 215px;
+    height: 205px;
     margin-top: 30px;
     /*margin-left: 40px;*/
     background: #e6e6e6;
@@ -126,11 +126,11 @@ section{
 }
 .flex-screen_bot{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-    margin: 3px 24px 3px 24px;
+    /*margin: 3px 24px 3px 24px;*/
 }
 .button_screen_left{
     width: 10px;
@@ -140,7 +140,7 @@ section{
     background: #504949;
 }
 .screen_left{
-    width:150px;
+    width:165px;
     height:150px;
     margin-left: 24px;
     background: #a9b099;;
@@ -150,6 +150,8 @@ section{
     height: 25px;
     background: #9f0102;
     border-radius: 12px;
+    margin-left: 24px;
+    margin-top: 3px;
 }
 .line_under_screen{
     display: flex;
@@ -158,6 +160,7 @@ section{
     align-items: stretch;
     align-content: stretch;
     margin-right: 2px;
+    margin-top: 3px;
 }
 .line{
     width: 40px;
@@ -165,7 +168,83 @@ section{
     border-radius: 2px;
     background: #504949;
     margin-bottom: 3px;
+    margin-right: 24px;
 }
+
+/*----- BOTTOM-LEFT -----*/
+
+.bottom_left{
+    width: 215px;
+    height: 90px;
+    margin-top: 10px;
+    border: 1px solid #2F4F4F;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+.joystick{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 8px;
+}
+.joystick_center{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+.joystick_cube{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background: #40403f;
+}
+.marge{
+    margin-top: 25px;
+}
+
+
+.option_bottom_left{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: stretch;
+}
+.button_gameboy{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    width: 50px;
+    height: 50px;
+    /*background: #01B0F0;*/
+}
+/*.column_gameboy{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    align-content: stretch;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background: #01B0F0;
+}*/
+.end{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: stretch;
+}
+
 
 
 
