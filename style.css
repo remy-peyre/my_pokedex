@@ -48,8 +48,6 @@ section{
     border: 5px solid #efefef;
     background: radial-gradient(#05fbfb, #29abe3);
     background: -webkit-radial-gradient(#05fbfb, #29abe3);
-    background: -moz-radial-gradient(#05fbfb, #29abe3);
-    background: -o-radial-gradient(#05fbfb, #29abe3);
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
@@ -79,18 +77,96 @@ section{
 .little_three{
     background: -webkit-radial-gradient(#9ff9ac, #34c84a);
 }
-
+.link_left-right{
+    width: 30px;
+    height: 336px;
+    margin: 0;
+    float: right;
+    right: 0;
+    background: #fb0506;
+    border-radius: 0 0 3px 0;
+}
 /*----- SCREEN LEFT -----*/
 
+.container_left{
+    width: 240px;
+    padding-left: 30px;
+}
+.border_interne{
+    width: 100%;
+    height: 3px;
+    background: #a2363f;
+    margin-top: 7px;
+}
+.container_left{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    width: initial;
+}
 .container_screen_left{
     width: 200px;
-    height: 180px;
+    height: 202px;
     margin-top: 30px;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     background: #e6e6e6;
     border-radius: 10px 10px 10px 0;
-
+    display: inline-block;
+    vertical-align: top;
 }
+
+.flex-screen_top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+.flex-screen_bot{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 3px 24px 3px 24px;
+}
+.button_screen_left{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 10px;
+    background: #504949;
+}
+.screen_left{
+    width:150px;
+    height:150px;
+    margin-left: 24px;
+    background: #a9b099;;
+}
+.button_screen_bottom{
+    width: 25px;
+    height: 25px;
+    background: #9f0102;
+    border-radius: 12px;
+}
+.line_under_screen{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin-right: 2px;
+}
+.line{
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: #504949;
+    margin-bottom: 3px;
+}
+
 
 
 
@@ -99,7 +175,7 @@ section{
 
 #right {
     width: 270px;
-    height: 340px;
+    height: 337px;
     background-color: #bf404a;
     display: inline-block;
     margin-left: -4px;
