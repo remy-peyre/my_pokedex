@@ -174,15 +174,15 @@ section{
 /*----- BOTTOM-LEFT -----*/
 
 .bottom_left{
-    width: 215px;
-    height: 90px;
-    margin-top: 10px;
-    border: 1px solid #2F4F4F;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
+    width: 215px;
+    height: 90px;
+    margin-top: 7px;
+    /*border: 1px solid #2F4F4F;*/
 }
 .joystick{
     display: flex;
@@ -200,16 +200,44 @@ section{
     align-content: stretch;
 }
 .joystick_cube{
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     color: #FFFFFF;
     background: #40403f;
+    padding: 3px;
 }
 .marge{
-    margin-top: 25px;
+    margin-top: 26px;
 }
-
-
+.joystick_top{
+    width: 0;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 20px solid #242424;
+}
+.joystick_right{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20px solid #242424;
+    border-bottom: 12px solid transparent;
+}
+.joystick_bot{
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid #242424;
+}
+.joystick_left{
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 20px solid #242424;
+    border-bottom: 12px solid transparent;
+}
+/*----- Second part -----*/
 .option_bottom_left{
     display: flex;
     flex-flow: row wrap;
@@ -217,21 +245,41 @@ section{
     align-items: flex-end;
     align-content: stretch;
 }
+.button_left{
+    width: 25px;
+    height: 6px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
 .button_gameboy{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
+    /*align-items: stretch;
+    align-content: stretch;*/
     width: 50px;
-    height: 50px;
+    height: 20px;
+    margin-top: 15px;
     /*background: #01B0F0;*/
 }
+.a_gameboy{
+    color: #242424;
+    background: #40403f;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+.b_gameboy{
+    margin-top: 25px;
+    color: #242424;
+    background: #40403f;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    line-height: 1.5;
+}
 /*.column_gameboy{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
-    align-content: stretch;
     width: 15px;
     height: 15px;
     border-radius: 10px;
@@ -241,8 +289,10 @@ section{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: baseline;
     align-content: stretch;
+
+    background: #01B0F0;
 }
 
 
