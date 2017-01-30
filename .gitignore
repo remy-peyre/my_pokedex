@@ -1,4 +1,2 @@
-/uploads/*
 .DS_Store
-!/uploads/.gitkeep
 *~
