@@ -17,26 +17,30 @@ window.onload = function() {
         var errorBlock = document.querySelector('#errorBlock');
         var pokedexValid = false;
 
-        var infoPokemon = document.querySelector('#name').value;
+        var infoPokemon = document.querySelector('#name').value.toLowerCase();
 
         for( var i in pokemon){
-            console.log(i);
-            if (pokemon[i].name == infoPokemon ){
+            if (pokemon[i].name.toLowerCase() == infoPokemon ){
                 pokedexValid = true;
                 errorBlock.innerHTML='';
                 name.innerHTML = pokemon[i].name;
                 type.innerHTML = pokemon[i].type;
-                image.innerHTML = '<img class="picture_size" src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
+                image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
             }
             if ( infoPokemon == i){
                 pokedexValid = true;
                 errorBlock.innerHTML='';
-                console.log(pokemon);
                 name.innerHTML = pokemon[i].name;
                 type.innerHTML = pokemon[i].type;
-                image.innerHTML = '<img class="picture_size" src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
+                image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
             }
-
+        }
+        if (pokedexValid === false){
+            if(isNaN(infoPokemon)){
+                errorBlock.innerHTML = infoPokemon + 'not found';
+            } else{
+                errorBlock.innerHTML = 'pokemon ' + infoPokemon + 'not found';
+            }
         }
         return false ;
 
