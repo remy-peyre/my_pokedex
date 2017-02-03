@@ -95,7 +95,10 @@ form{
 }
 
 /*----- SCREEN MIDDLE-LEFT -----*/
-
+.picture_size{
+    width: 100%;
+    height: 150px;
+}
 .container_left{
     width: 240px;
     padding-left: 30px;
