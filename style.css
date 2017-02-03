@@ -424,3 +424,13 @@ form{
 .seconde{
     width: 59%;
 }
+
+
+@media only screen and (max-width : 769px) {
+    #right{
+        display: none;
+    }
+    .container_left{
+        display: none;
+    }
+}
