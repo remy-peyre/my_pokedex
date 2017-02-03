@@ -39,7 +39,7 @@ window.onload = function() {
             if(isNaN(infoPokemon)){
                 errorBlock.innerHTML = infoPokemon + 'not found';
             } else{
-                errorBlock.innerHTML = 'pokemon ' + infoPokemon + 'not found';
+                errorBlock.innerHTML = 'pokemon numéro ' + infoPokemon + ' not found';
             }
         }
         return false ;
