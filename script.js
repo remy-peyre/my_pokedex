@@ -15,6 +15,8 @@ window.onload = function() {
         var type = document.querySelector('#showType');
         var image = document.querySelector('#img_zone');
         var errorBlock = document.querySelector('#errorBlock');
+        var buttonOne = document.querySelector('.little_one');
+        var buttonTwo = document.querySelector('.little_two');
         var pokedexValid = false;
 
         var infoPokemon = document.querySelector('#name').value.toLowerCase();
@@ -26,6 +28,8 @@ window.onload = function() {
                 name.innerHTML = pokemon[i].name;
                 type.innerHTML = pokemon[i].type;
                 image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
+                buttonOne.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
+                buttonTwo.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
             }
             if ( infoPokemon == i){
                 pokedexValid = true;
@@ -33,20 +37,27 @@ window.onload = function() {
                 name.innerHTML = pokemon[i].name;
                 type.innerHTML = pokemon[i].type;
                 image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
+                buttonOne.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
+                buttonTwo.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
             }
         }
         if (pokedexValid === false){
             if(isNaN(infoPokemon)){
-                errorBlock.innerHTML = infoPokemon + 'not found';
+                errorBlock.innerHTML = infoPokemon + ' not found';
+                buttonOne.style.background  = "-webkit-radial-gradient(#fb7b7b, #fb0506)";
+                buttonTwo.style.background  = "-webkit-radial-gradient(#ecec6c, #fdbe41)";
+                image.innerHTML = '';
+                name.innerHTML = '';
+                type.innerHTML = '';
             } else{
-                errorBlock.innerHTML = 'pokemon numéro ' + infoPokemon + ' not found';
+                errorBlock.innerHTML = 'pokemon n° ' + infoPokemon + ' not found';
+                buttonOne.style.background  = "-webkit-radial-gradient(#fb7b7b, #fb0506)";
+                buttonTwo.style.background  = "-webkit-radial-gradient(#ecec6c, #fdbe41)";
+                image.innerHTML = '';
+                name.innerHTML = '';
+                type.innerHTML = '';
             }
         }
         return false ;
-
-    }
-
-
-
-
+    };
 };

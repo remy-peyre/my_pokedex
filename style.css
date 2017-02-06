@@ -100,8 +100,18 @@ form{
     background: /*#fb0506*/#8c3434;
     border-radius: 0 0 3px 0;
 }
-
+.round-top{
+    height: 10px;
+    background: #bf404a;
+    margin-top: 50px;
+}
+.round-bottom{
+    height: 10px;
+    margin-top: 200px;
+    background: #bf404a;
+}
 /*----- SCREEN MIDDLE-LEFT -----*/
+
 .view_bonus{
     display: none;
 }
