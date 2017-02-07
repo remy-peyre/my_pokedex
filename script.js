@@ -36,7 +36,7 @@ window.onload = function() {
                 errorBlock.innerHTML='';
                 name.innerHTML = pokemon[i].name;
                 type.innerHTML = pokemon[i].type;
-                image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase()+'.jpg">';
+                image.innerHTML = '<img src="http://img.pokemondb.net/artwork/'+pokemon[i].name.toLowerCase().replace(". ","-").replace("'","")+'.jpg">';
                 buttonOne.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
                 buttonTwo.style.background  = "-webkit-radial-gradient(#9ff9ac, #34c84a)";
             }
